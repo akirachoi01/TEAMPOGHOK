@@ -50,4 +50,4 @@ def handle_private_message(data):
         emit("private_message", {"sender": sender, "message": message}, room=recipient_sid)
 
 if __name__ == "__main__":
-    socketio.run(app, host="0.0.0.0", port=8000, debug=True)
+    socketio.run(app, host="0.0.0.0", port=PORT, debug=False, allow_unsafe_werkzeug=True)
