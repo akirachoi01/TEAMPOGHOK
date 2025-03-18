@@ -2,3 +2,4 @@ flask
 flask-socketio
 eventlet
 flask_session
+firebase-admin
