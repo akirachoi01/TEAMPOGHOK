@@ -1,3 +1,4 @@
+import os,
 from flask import Flask, render_template, request  # ← Dagdagan ito!
 from flask_socketio import SocketIO, send, emit, join_room, leave_room
 
