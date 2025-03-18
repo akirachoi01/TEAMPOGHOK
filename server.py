@@ -10,6 +10,8 @@ users = {}  # Dictionary to store connected users
 @app.route("/")
 def index():
     return render_template("index.html")
+# Gamitin ang tamang PORT
+PORT = int(os.getenv("PORT", 8000))
 
 @socketio.on("connect")
 def handle_connect():
